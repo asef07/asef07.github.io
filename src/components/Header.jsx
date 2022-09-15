@@ -5,7 +5,7 @@ import {Box, Stack, Typography} from "@mui/material";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 import {ReactComponent as Logo} from '../assets/logo.svg';
 
@@ -25,11 +25,12 @@ const NAV_BUTTONS = [
 ]
 
 const Header = () => {
+
     return <header style={{background: '#F2FAFF'}}>
         <Stack
             direction={'row'}
             alignItems={'center'}
-            justifyContent={'space-between'}
+            justifyContent={{xs: 'space-evenly', sm: 'space-evenly', md: 'space-between'}}
             mx={{xs: 0, sm: 0, md: '10rem'}}
         >
             <Box
@@ -39,7 +40,7 @@ const Header = () => {
                     justifyContent: 'center',
                     background: '#111A45',
                     py: '4px',
-                    px: '4rem',
+                    px: {xs: '1rem', sm: '1rem', md: '10rem'},
                     borderRadius: '0 0 20px 20px'
                 }}
             >
@@ -54,11 +55,23 @@ const Header = () => {
                 >
                     Contact Us
                 </Typography>
-                <Stack direction={'row'} spacing={{xs: 0, sm:2, md: 3}}>
-                    <WhatsAppIcon sx={{fontSize: '20px', cursor: 'Pointer'}}/>
-                    <LinkedInIcon sx={{fontSize: '20px', cursor: 'Pointer'}}/>
-                    <TwitterIcon sx={{fontSize: '20px', cursor: 'Pointer'}}/>
-                    <ShoppingCartIcon sx={{fontSize: '20px', cursor: 'Pointer'}}/>
+                <Stack direction={'row'} spacing={{xs: 2, sm:2, md: 3}}>
+                    <WhatsAppIcon
+                        onClick={() => window.open("https://wa.me/+8801869354944", "_blank")}
+                        sx={{fontSize: '20px', cursor: 'Pointer'}}
+                    />
+                    <LinkedInIcon
+                        onClick={() => window.open("https://www.linkedin.com/in/muhtadeeasef/", "_blank")}
+                        sx={{fontSize: '20px', cursor: 'Pointer'}}
+                    />
+                    <TwitterIcon
+                        onClick={() => window.open("https://twitter.com/muhtadeeasef", "_blank")}
+                        sx={{fontSize: '20px', cursor: 'Pointer'}}
+                    />
+                    <InstagramIcon
+                        onClick={() => window.open("https://www.instagram.com/muhtadeeasef/", "_blank")}
+                        sx={{fontSize: '20px', cursor: 'Pointer'}}
+                    />
                 </Stack>
             </Stack>
         </Stack>
