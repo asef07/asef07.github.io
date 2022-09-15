@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-import {ReactComponent as Logo} from '../assets/logo.svg'
+import {ReactComponent as Logo} from '../assets/logo.svg';
 
 const NAV_BUTTONS = [
     {

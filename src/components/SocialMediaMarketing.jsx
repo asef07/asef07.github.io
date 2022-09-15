@@ -14,7 +14,8 @@ const SocialMediaMarketing = () => {
                 height: '700px',
                 backgroundImage: `url(${Background})`,
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                backgroundSize: 'cover'
             }}
         >
             <Box ml={{xs: '1rem', sm: '1rem', md: '10rem'}}>
